@@ -1,3 +1,8 @@
+
+
+
+
+
 class Card {
     constructor(suit,rank,score) {
     this.suit = suit,
@@ -48,9 +53,12 @@ function splitCards (){
 newDeck.createDeck();
 newDeck.shuffle();
    // giving player 26 cards from newDeck
-  console.log(player1.card.length)
+  // console.log(player1.card.length)
+  player1.card = newDeck.cards.splice(0,26)
   player2.card =newDeck.cards          // giving player 2 the rest of the newDeck cards
-console.log(player2.card.length)
+// console.log(player2.card.length)
+
+
 
 // Drawing function:
 // const draw = newDeck.cards.pop()
@@ -63,6 +71,8 @@ console.log(player2.card.length)
 
 
 function playGame(){ 
+  // console.log(player2.card)
+  // splitCards()
   console.log(player1.card[0]) //We are accessing the first card from player 1's array
   console.log(player2.card[0])//We are accessing the first card from player 2's array
 
@@ -83,7 +93,7 @@ if (player1.card[0].score > player2.card[0].score) {
   //unshifting of player 2's deck
 var player2oldCard = player2.card.shift() //going to player 2's deck and taking the first card, and naming it player2oldCard
   player1.card.push(player2oldCard)
-  console.log("player 1 cards left:")
+  console.log("player 2 cards left:")
  console.log(player1.card.length)
 
 
@@ -109,27 +119,9 @@ else if(player2.card[0].score > player1.card[0].score) {
   
 
 }else {console.log("This means WAR!")
-
-war()
-
 }
-//Function for War
-function war (){
-// player1.card[0].score and player2.card[0].score Are the same
-// I DECLARE WAR
-// player1.card[3] and player2.card[3]  [0] up to [3] is taken
-//Tempary holders for each player
-var player1Holder = player1.card.splice(0,5) //holder for player
 
-
-
-
-
-
-
-var player2Holder = player2.card.splice(0,5) // holder for player 2 cards
-
-}Ω
+Ω
 
 
 
@@ -139,7 +131,7 @@ s groceryBag = []
 var fruits = ["grapefruit", "Banana", "Orange", "Apple", "Mango"];
 var x = fruits.shift();    // the value of x is "Banana"
 groceryBag.push(x)
-x = fruits.shift();    // the value of x is "Banana"
+x = // then we need to draw cards from each playerfruits.shift();    // the value of x is "Banana"
 console.log(x)
 groceryBag.push(x)
 console.log(groceryBag)
@@ -151,8 +143,7 @@ console.log(fruits)
 // loop through the length of cards 
 
 // if player does not have enough cards, the player loses/forfeits. 
-// the highest ranked card will take all of the cards on the board. (10 cards)
-//once the player runs out of cards, the player will lose.
+// the highest ranked card will ll lose.
 //The other player collects all 52 and wins!
 // Keep looping until one player has no cards (player1 or player2.length == 0)
 
