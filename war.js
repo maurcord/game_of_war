@@ -1,8 +1,3 @@
-
-
-
-
-
 class Card {
     constructor(suit,rank,score) {
     this.suit = suit,
@@ -72,9 +67,8 @@ newDeck.shuffle();
 
 function playGame(){ 
   // console.log(player2.card)
-  // splitCards()
-  console.log(player1.card[0]) //We are accessing the first card from player 1's array
-  console.log(player2.card[0])//We are accessing the first card from player 2's array
+  // console.log(player1.card[0]) //We are accessing the first card from player 1's array
+  // console.log(player2.card[0])//We are accessing the first card from player 2's array
 
   //Each card is an object Suit, Rank score
   //Player card is an array holding card objects
@@ -121,17 +115,20 @@ else if(player2.card[0].score > player1.card[0].score) {
 }else {console.log("This means WAR!")
 }
 
-Ω
+
+
 
 
 
 //End of Play function
 }
-s groceryBag = []
+
+
+var groceryBag = []
 var fruits = ["grapefruit", "Banana", "Orange", "Apple", "Mango"];
 var x = fruits.shift();    // the value of x is "Banana"
 groceryBag.push(x)
-x = // then we need to draw cards from each playerfruits.shift();    // the value of x is "Banana"
+// then we need to draw cards from each playerx = fruits.shift();    // the value of x is "Banana"
 console.log(x)
 groceryBag.push(x)
 console.log(groceryBag)
@@ -143,7 +140,7 @@ console.log(fruits)
 // loop through the length of cards 
 
 // if player does not have enough cards, the player loses/forfeits. 
-// the highest ranked card will ll lose.
+// the highest ranked card wr will lose.
 //The other player collects all 52 and wins!
 // Keep looping until one player has no cards (player1 or player2.length == 0)
 
